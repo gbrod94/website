@@ -77,29 +77,7 @@ body {
   justify-content: space-between;
 }
 
-.skewed-bg {
-  display: flex;
-  align-items: center;
-  background: rgb(0,0,0);
-  padding: 100px 0;
-  -webkit-transform: skew(0deg, -5deg);
-  transform: skew(0deg, -5deg);
-  margin-top: -22.5rem;
-}
-.skewed-bg .content {
-  -webkit-transform: skew(0deg, 5deg);
-  transform: skew(0deg, 5deg);
-  text-align: left;
-}
-.skewed-bg .content .title {
-  padding-top: 6,25rem;
-  font-weight: normal;
-}
-.skewed-bg .content .text {
-  width: 60%;
-  /* margin: 25px auto; */
-  color: #ccfff2;
-}
+
 
 a {
 text-decoration: none;
@@ -149,13 +127,6 @@ h2 {
 .align_right {
   text-align: right;
 }
-
-span {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.25rem;
-  color: rgb(0,0,0);
-}
-
 
 .logo {
     display: inline-flex;
@@ -218,12 +189,24 @@ span {
   justify-content: center;
   }
 
+  .foto_group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .snapshot {
     width: 10rem;
-    display: flex;
-    flex-direction: column;
     margin: 2rem;
   }
+
+  span {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(0,0,0);
+  }
+
 
   #contact {
     background-color: rgb(0,0,0);
@@ -276,6 +259,32 @@ span {
   .footer .credits .link {
     color: #00B285;
     text-decoration: none;
+  }
+
+  /* EFFECTS */
+
+  .skewed-bg {
+    display: flex;
+    align-items: center;
+    background: rgb(0,0,0);
+    padding: 100px 0;
+    -webkit-transform: skew(0deg, -5deg);
+    transform: skew(0deg, -5deg);
+    margin-top: -22.5rem;
+  }
+  .skewed-bg .content {
+    -webkit-transform: skew(0deg, 5deg);
+    transform: skew(0deg, 5deg);
+    text-align: left;
+  }
+  .skewed-bg .content .title {
+    padding-top: 6,25rem;
+    font-weight: normal;
+  }
+  .skewed-bg .content .text {
+    width: 60%;
+    /* margin: 25px auto; */
+    color: #ccfff2;
   }
 
   /* hover link effect */
