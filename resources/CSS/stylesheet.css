@@ -48,8 +48,8 @@ body {
 }
 
 .header, footer {
-  background-color: rgba(100, 100, 100);
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
+  font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,8 +58,9 @@ body {
 
 .header {
   position: relative;
-  top: 2rem;
-  background-color: rgba(255,255,255,0.8);
+  top: 1.75rem;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
 }
 
 .megatron {
@@ -81,21 +82,34 @@ body {
 
 a {
 text-decoration: none;
-color: black;
-}
-
-a:hover {
-  color: black;
+color: white;
 }
 
 ul {
-	display: inline-flex;}
+	display: inline-flex;
+  margin: 0 1rem;
+ }
 
 li  {
   display: inline-flex;
   justify-content: space-between;
   margin-right: 2rem;
   list-style: none;
+}
+
+.lang li {
+  padding: 0 1rem;
+}
+
+.lang a:hover {
+  color: rgb(248,238,94);
+}
+
+.pt {
+  border-right: 1px solid rgb(248,238,94);
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 1rem;
 }
 
 h1 {
@@ -124,13 +138,29 @@ h2 {
   margin-top: 10rem;
 }
 
+#contact .skewed-bg .content .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 0px;
+}
+
+#contact .skewed-bg .content {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
 .align_right {
   text-align: right;
 }
 
 .logo {
     display: inline-flex;
-    height: 4rem;
+    height: 5rem;
 }
 
 
@@ -187,6 +217,7 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 30rem;
   }
 
   .foto_group {
@@ -196,8 +227,8 @@ h2 {
   }
 
   .snapshot {
-    width: 10rem;
-    margin: 2rem;
+    width: 15rem;
+    margin: 2rem 4rem 1rem 4rem;
   }
 
   span {
@@ -205,13 +236,6 @@ h2 {
     font-size: 1rem;
     text-align: center;
     color: rgb(0,0,0);
-  }
-
-
-  #contact {
-    background-color: rgb(0,0,0);
-    padding: 1.5rem 3rem;
-
   }
 
   .contact_group img {
@@ -239,26 +263,29 @@ h2 {
     justify-content: space-between;
   }
 
-  footer {
-    background-color: rgb(248,238,94);
-    color: rgba(0,0,0,0.4);
-    height: 10rem;
+  #contact .skewed-bg .content {
+    width: 80%;
   }
 
-  footer .logo {
+  .footer .logo {
     opacity: 0.4;
   }
 
   .footer {
-    padding-top: 300px;
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(248,238,94);
+    color: rgba(0,0,0,0.4);
+    height: 15rem;
   }
-  .footer .credits {
-    text-align: left;
-    color: #666;
+
+  .footer a {
+    color: rgba(0,0,0,0.4);
   }
-  .footer .credits .link {
-    color: #00B285;
-    text-decoration: none;
+
+  .footer a:hover {
+    color: rgb(0,0,0);
   }
 
   /* EFFECTS */
