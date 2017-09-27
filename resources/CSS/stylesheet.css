@@ -63,15 +63,49 @@ body {
 
 .megatron {
   height: 4.69rem;
-  display: flex;
-  align-items: center;
   background-image: url("../images/landing-02.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 65rem;
   width: 100%;
-  justify-content: space-between;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
+h1 {
+  /* color: rgb(248,238,94); */
+  font-weight: bold;
+}
+
+.remodel {
+    font-size: 7rem;
+    position: relative;
+    right: -20rem;
+    color: white;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.remodel:hover {
+  transform: translate(-3rem);
+}
+
+.carpint {
+  font-size: 7rem;
+  position:relative;
+  left: -20rem;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.carpint:hover {
+  transform: translate(3rem);
 }
 
 
@@ -108,17 +142,7 @@ li  {
   padding-right: 1rem;
 }
 
-h1 {
-  color: rgb(248,238,94);
-  font-weight: bold;
-  font-size: 4rem;
-  /* width: 450px;
-  border-radius: 50%;
-  font-size: 50px;
-  background-color: rgba(0,0,0,0.8);
-  line-height: 450px; */
-  text-align: center;
-}
+
 
 h2 {
   color: rgb(248,238,94);
@@ -131,7 +155,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10rem;
 }
 
 #contact .skewed-bg .content .container {
@@ -159,14 +182,6 @@ h2 {
     height: 5rem;
 }
 
-
-
-.category {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-
 #sobre img {
   height: 15rem;
   position: relative;
@@ -174,7 +189,6 @@ h2 {
 }
 
 #sobre {
-  height: 20rem;
   text-align: left;
   }
 
@@ -194,7 +208,8 @@ h2 {
 
 
   #equipa {
-    padding: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     display: flex;
     justify-content: center;
 
@@ -286,13 +301,14 @@ h2 {
     color: rgb(0,0,0);
   }
 
+
   /* EFFECTS */
 
   .skewed-bg {
     display: flex;
     align-items: center;
     background: rgb(0,0,0);
-    padding: 100px 0;
+    padding: 11.9rem 0;
     -webkit-transform: skew(0deg, -5deg);
     transform: skew(0deg, -5deg);
     margin-top: -10rem;
