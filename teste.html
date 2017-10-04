@@ -165,7 +165,8 @@ $(document).ready(function(){
           <div class="banner">
             <div class="site-wrapper">
               <div class="flex-column">
-                <span class="frase"> <h1> REMODELAÇÕES </h1> NÃO PRECISA DE ESPERAR MAIS TEMPO </br>  PARA SE SENTIR EM CASA</span>
+                <span class="frase"> <h1> REMODELAÇÕES </h1> <span>NÃO PRECISA DE ESPERAR MAIS TEMPO</span> </br>
+                <span>PARA SE SENTIR EM CASA</span>
               </div>
             </div>
           </div>
@@ -177,7 +178,7 @@ $(document).ready(function(){
           <div class="fixolite">
             <div class="site-wrapper">
               <div class="text">
-                <span> ESTRUTURAS EM FIXOLITE </span>
+                <span> ESTRUTURAS EM FIXOLITE </span> </br> </br> </br>
 
               <p> Conforto térmico único e uma isolação inigualável </p>
               <p> Fixolite é um conjunto seco que permite poupar tempo. </br> Tem um elemento isolante fixado ao bloco do fabrico, a retenção e o performance da montagem serão ótimos.
@@ -190,7 +191,7 @@ $(document).ready(function(){
 
               - Blocos ocos isolantes, a serem preenchidos com concreto após a instalação, paredes secas com dimensões de 50 x 25 cm, ou seja, 8 blocos por m2 e sua facilidade de implantação (montagem em parede) permitem altas taxas de colocação 4-5 vezes mais rápido do que a construção tradicional e sem trabalho especializado; </br></br>
               - Caixilhos rolantes, feitos de poliestireno expandido e cobertos com poliestireno, fibras de madeira, terracota (tijolo) ou concreto. </p> </br>
-                              <p> Entre em contacto connosco por mais informações, <a href="#contact"> aqui. </a> </p>
+                              <p> Entre em contacto connosco por mais informações, <a href="#contact"> <strong>aqui.</strong> </a> </p>
             </div>
 
             <img style="width:45%;" src="./resources/images/fixolite.jpg">
@@ -198,10 +199,56 @@ $(document).ready(function(){
         </div>
 
         <div class="obras">
-          <div class="site-wrapper">
+
             <div class="flex-column">
               <div class="text">
                 <span> PROJETOS </span>
+              </div>
+              <div id="gallery">
+                <div class="currieira">
+                  <h1> Corrieira </h1>
+                  <p> Localização: algarve </p>
+                </div>
+
+
+                  <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"></div></button>
+            <div id="myDropdown" class="dropdown-content">
+              <div class="gal img1">
+               <img src="./resources/images/currieira1.jpg">
+               <img src="./resources/images/currieira2.jpg">
+               <img src="./resources/images/currieira4.jpg">
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <script>
+          /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          </script>
+
+                </div>
               </div>
             </div>
           </div>
