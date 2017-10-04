@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>KitConcept</title>
+<link href="./resources/CSS/reset.css" type="text/css" rel="stylesheet">
+<link href="./resources/CSS/stylesheet.css" type="text/css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+</style>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+</style>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800i" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800i');
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+<!-- script for page scroll effect -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+<!-- CONTACT FORM -->
+</head>
+
+<body>
+    <!-- navagational bar -->
+    <div id="begin"> </div>
+      <nav class="header">
+        <div class="site-wrapper">
+        <img class="logo" src="./resources/images/logo_white-02.png" alt="logo">
+        <div>
+        <ul>
+          <li> <a href="#sobre" class="link sliding"> SOBRE NÓS </a> </li>
+          <li> <a href="#equipa" class="link sliding"> EQUIPA </a> </li>
+          <li> <a href="#remodel" class="link sliding"> REMODELAÇÃO </a> </li>
+          <li> <a href="#carpint" class="link sliding"> CARPINTARIA </a> </li>
+          <li> <a href="#contact" class="link sliding"> CONTACTO </a> </li>
+          <li> <a href="#parcerias" class="link sliding"> PARCERIAS </a> </li>
+
+        </ul>
+        <ul class="lang">
+          <li class="pt"> <a href="./index.html"> PT </a> </li>
+          <li class="en"> <a href="./indexEN.html"> EN </a> </li>
+        </ul>
+      </div>
+    </div>
+      </nav>
+
+    <!-- megatron -->
+      <div class="megatron">
+        <div class="category"> <h1 class="remodel"> <a href="#remodel"> REMODELAÇÕES </a> </h1> </div>
+        <div class="category"> <h1 class="carpint"> <a href="#carpint"> CARPINTARIA </a> </h1> </div>
+      </div>
+
+    <!-- Sobre -->
+      <section id="sobre">
+        <div class="skewed-bg">
+          <div class="content">
+            <div class="site-wrapper">
+            <img src="./resources/images/LOGO_yellow.svg">
+              <div class="text">
+                <h2> SOBRE NÓS </h2>
+                <p> Somos uma empresa jovem e dinâmica, do ramo da carpintaria, sediada em Leiria. Aporte técnico, mão de obra especializada e comprometida com o serviço. A nossa empresa está preparada para dar respostas, das mais simples ás mais exigentes, oferecendo sempre uma solução inteligente e versatil para quem precisa reformar ou construir.
+                </br> </br>
+                Podemos contribuir de forma positiva para o seu espaço, com serviços realizados de qualidade que prezamos dentro da nossa organização.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Equipa -->
+    <section id="equipa">
+      <div class="site-wrapper">
+      <div class="flex-column">
+          <h2 class="align_right"> EQUIPA </h2>
+          <p> Apresentamos uma equipa diversa e dinâmica, para responder a todas as necessidades dos nossos clientes. De forma a oferecer um atendimento personalizado e completo.
+          </p>
+
+          <div class="fotografias">
+            <div class="foto_group">
+              <img class="snapshot" src="./resources/images/andre.jpg" alt="André CEO">
+              <span> <strong>André Almeida</strong>, CEO </span>
+            </div>
+            <div class="foto_group">
+              <img class="snapshot" src="./resources/images/rita.jpg" alt="Rita">
+              <span> <strong>Ana Rita Santos</strong>, Administrativa </span>
+            </div>
+            <div class="foto_group">
+              <img class="snapshot" src="./resources/images/helena.jpg" alt="Helena">
+              <span> <strong>Helena Nunes</strong>, Administrativa </span>
+            </div>
+            <div class="foto_group">
+              <img class="snapshot" src="./resources/images/rui.jpg" alt="Rui">
+              <span> <strong>Rui Henriques</strong>, Comercial</span>
+            </div>
+            <div class="foto_group">
+              <img class="snapshot" src="./resources/images/ruben.jpg" alt="Ruben">
+              <span> <strong>Ruben Santos</strong>, Comercial</span>
+            </div>
+            <div class="foto_group">
+              <img class="snapshot" src="./resources/images/ana.jpg" alt="Ana">
+              <span> <strong>Ana Isidoro</strong>, Decoradora de Interiores </span>
+            </div>
+            <div class="foto_group">
+              <img class="snapshot" src="./resources/images/cristiano.jpg" alt="Cristiano">
+              <span> <strong>Cristiano Perreira</strong>, Responsável de Obras </span>
+            </div>
+            <div class="foto_group">
+              <img class="snapshot" src="./resources/images/gabriela.jpg" alt="Gabriela">
+              <span> <strong>Gabriela Rodrigues</strong>, Designer </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Remodelações -->
+    <div class="division">
+      <div class="skewed-bg">
+        <div class="content">
+        </div>
+      </div>
+    </div>
+    <section id="remodel">
+        <div class="remodel-gallery">
+          <div class="banner">
+            <div class="site-wrapper">
+              <div class="flex-column">
+                <span class="frase"> <h1> REMODELAÇÕES </h1> NÃO PRECISA DE ESPERAR MAIS TEMPO </br>  PARA SE SENTIR EM CASA</span>
+              </div>
+            </div>
+          </div>
+          <div class="skewed-bg">
+            <div class="content">
+            </div>
+          </div>
+
+          <div class="fixolite">
+            <div class="site-wrapper">
+              <div class="text">
+                <span> ESTRUTURAS EM FIXOLITE </span>
+
+              <p> Conforto térmico único e uma isolação inigualável </p>
+              <p> Fixolite é um conjunto seco que permite poupar tempo. </br> Tem um elemento isolante fixado ao bloco do fabrico, a retenção e o performance da montagem serão ótimos.
+              </p>
+              <p> Os blocos Fixolite são feitos de cimento Portland / madeira  e um isolamento tradicional ou de grafite (dentro ou fora). Os blocos se juntam secos (exceto a primeira linha). O betão é então moldado para trazer a força mecânica ao todo trazendo também uma inércia (RT 2012). </br>
+
+              As caixas de dintel são feitas de um invólucro de poliestireno (com armação de aço) . A parte externa será coberta com um revestimento de fibra, tijolo, concreto ou nervuras (PSE). As caixas de dintel Fixolite podem acomodar todas as persianas no mercado. </br> </br></br>
+
+              <strong> Os produtos Fixolite vêm em uma variedade de formas, incluindo : </strong></br> </br>
+
+              - Blocos ocos isolantes, a serem preenchidos com concreto após a instalação, paredes secas com dimensões de 50 x 25 cm, ou seja, 8 blocos por m2 e sua facilidade de implantação (montagem em parede) permitem altas taxas de colocação 4-5 vezes mais rápido do que a construção tradicional e sem trabalho especializado; </br></br>
+              - Caixilhos rolantes, feitos de poliestireno expandido e cobertos com poliestireno, fibras de madeira, terracota (tijolo) ou concreto. </p> </br>
+                              <p> Entre em contacto connosco por mais informações, <a href="#contact"> aqui. </a> </p>
+            </div>
+
+            <img style="width:45%;" src="./resources/images/fixolite.jpg">
+          </div>
+        </div>
+
+        <div class="obras">
+          <div class="site-wrapper">
+            <div class="flex-column">
+              <div class="text">
+                <span> PROJETOS </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <section id="carpint">
+      <div class="site-wrapper">
+        <div class="flex-column">
+          <h2 class="align_right"> CARPINTARIA </h2>
+          <p> Versátil e Segura, sempre com um design arrojado
+          </p>
+
+          <section class="gallery">
+
+
+
+
+    </section>
+      </div>
+    </div>
+  </section>
+
+    <!-- Contact FORM Section -->
+
+    <section id="contact">
+      <div class="site-wrapper">
+          <div class="flex-column-form">
+            <form id="contact-form" action="mail.php" method="post">
+              <h3>Contacte-nos</h3>
+              <h4>Entre em contacto connosco</h4>
+              <fieldset>
+                <input placeholder="Nome" type="text" name="name" tabindex="1" required="">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Email" type="email" name="email" tabindex="2" required="">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Contacto Telefónico" type="tel" name="tel" tabindex="3" required="">
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Mensagem" name="message" tabindex="5" required=""></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="Enviar" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              </fieldset>
+
+              <div class="icons">
+              <h3> Siga-nos em </h3>
+
+                <a target="_blank" href="https://www.facebook.com/geralkitconcept/"> <img src="./resources/images/facebook-logo-button.png"> </a>
+                <a target="_blank" href="https://www.instagram.com/kitconcept.pt/"> <img src="./resources/images/instagram-logo.png"> </a>
+              </div>
+            </div>
+              <!-- <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p> -->
+            </form>
+
+          <div id="map">
+            <iframe width="100%" height="560" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Avenida%20General%20Humberto%20Delgado%20225%20r%2Fc%202410-250%20Leiria&key=AIzaSyCR_n90gwWRiDVJJhG78VDKYJyj36QwTiw" allowfullscreen></iframe>
+          </div>
+
+      </div>
+
+    </section>
+
+    <section id="parcerias">
+      <div class="parcerias">
+
+      <img src="./resources/images/PEDINI-logo.png">
+      <img src="./resources/images/TWOM_Logo_compl_desig_Cor.png">
+      <img src="./resources/images/sildoor_logo.png">
+
+    </div>
+
+    </section>
+
+
+        <footer class="footer">
+          <div class="site-wrapper">
+          <a href="#begin"> <img class="logo" src="./resources/images/LOGO_yellow.svg" alt="logo"> </a>
+          <ul>
+            <li> <a href="#sobre" class="link"> SOBRE NÓS </a> </li>
+            <li> <a href="#equipa" class="link"> EQUIPA </a> </li>
+            <li> <a href="#remodel" class="link sliding"> REMODELAÇÃO </a> </li>
+            <li> <a href="#carpint" class="link sliding"> CARPINTARIA </a> </li>
+            <li> <a href="#contact" class="link"> CONTACTO </a> </li>
+            <li> <a href="#parcerias" class="link"> PARCERIAS </a> </li>
+          </ul>
+        </div>
+        </footer>
+  </body>
+ </html>
