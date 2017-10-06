@@ -142,11 +142,15 @@ h2 {
   font-weight: 700;
 }
 
-h3, h4 {
+h3 {
   color: black;
   font-size: 2.5rem;
 }
 
+h4 {
+  color: black;
+  font-size: 2rem;
+}
 p {
   font-size: 1.25rem;
   width: 80%;
@@ -294,6 +298,7 @@ span {
 .category a:active .text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  color: #fbed2b;
 }
 .category a:hover:after,
 .category a:active:after {
@@ -414,7 +419,7 @@ span {
     padding-top: 10rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 40rem;
+    margin-bottom: 10rem;
   }
 
   #equipa p {
@@ -481,9 +486,9 @@ span {
   }
 
   .carpint-gallery .banner {
-    background-image: url("../images/floor.jpg");
+    background-image: url("../images/carpintery.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 100% 77%;
     background-size: cover;
     height: 50rem;
     width: 100%;
@@ -504,13 +509,12 @@ span {
 
   .banner span {
     font-family: "Open Sans", "Raleway", sans-serif;
-    font-weight: 800;
-
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: left;
     line-height: 1.75;
-    padding: 5rem 0;
+    padding-top: 5%;
+    padding-left: 5%;
 
   }
 
@@ -548,12 +552,14 @@ span {
 
   #remodel .skewed-bg, .division .skewed-bg {
     padding: 5rem 0;
+    background-color: white;
   }
 
   #contact {
     display: flex;
     align-items: center;
     margin: 0 auto;
+    border-top: 1px solid #fbed2b;
   }
 
   #contact h2 {
@@ -580,7 +586,7 @@ span {
     opacity: 1;
   }
 
-  .icons h3 {
+  .icons h4 {
     margin-right: 2rem;
   }
 
@@ -659,7 +665,7 @@ span {
 }
 
 #contact-form h4 {
-  margin: 5px 0 15px;
+  
   display: block;
   font-size: 13px;
   font-weight: 400;
@@ -869,6 +875,10 @@ fieldset {
 
 }
 
+.currieira {
+  margin-top: 9rem;
+}
+
 .currieira-main-img {
   background-image: url("../images/currieira_exterior.jpg");
   background-size: cover;
@@ -981,6 +991,7 @@ button {
   align-items: center;
   justify-content: center;
   width: 25%;
+  margin: 2rem 0 auto 1rem;
 }
 
 .cur_main {
@@ -994,12 +1005,12 @@ button {
   margin-top: 2rem;
 }
 
-.cur_small {
+.small_section {
   width: 50%;
   height: 400px;
 }
 
-.cur_small img {
+.small_section img {
   width: 40%;
   margin: 0 1% 1% 2.5%;
 }
@@ -1017,6 +1028,27 @@ button {
 
 .tag {
   border-top: 1px solid #fbed2b;
-  margin-top: 2rem;
+  margin-top: 6rem;
   margin-bottom: 3rem;
+}
+
+.tag p {
+  color: black;
+}
+
+.in-construction {
+  color: black;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #fbed2b;
+  border-bottom: 1px solid #fbed2b;
+  margin-bottom: 15rem;
+}
+
+.banner .site-wrapper {
+  width: 100%;
 }
