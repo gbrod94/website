@@ -63,14 +63,14 @@ $(document).ready(function(){
     <div id="begin"> </div>
       <nav class="header">
         <div class="site-wrapper">
-        <img class="logo" src="./resources/images/logo_white-02.png" alt="logo">
+        <a href="#begin"> <img class="logo" src="./resources/images/logo_white-02.png" alt="logo"></a>
         <div>
 
         <ul>
           <li> <a href="#sobre" class="link sliding"> SOBRE NÓS </a> </li>
-          <li> <a href="#equipa" class="link sliding"> EQUIPA </a> </li>
           <li> <a href="#remodel" class="link sliding"> REMODELAÇÃO </a> </li>
           <li> <a href="#carpint" class="link sliding"> CARPINTARIA </a> </li>
+          <li> <a href="#equipa" class="link sliding"> EQUIPA </a> </li>
           <li> <a href="#contact" class="link sliding"> CONTACTO </a> </li>
           <li> <a href="#parcerias" class="link sliding"> PARCERIAS </a> </li>
         </ul>
@@ -124,6 +124,159 @@ $(document).ready(function(){
         </div>
     </section>
 
+    <!-- Remodelações -->
+
+    <section id="remodel">
+
+      <div class="division">
+        <div class="skewed-bg">
+          <div class="content">
+          </div>
+        </div>
+      </div>
+
+        <div class="remodel-gallery">
+          <div class="banner">
+            <div class="site-wrapper">
+                <span class="frase">
+                  <h1> REMODELAÇÕES </h1>
+                  <span>NÃO PRECISA DE ESPERAR MAIS TEMPO</span> </br>
+                  <span>PARA SE SENTIR EM CASA</span>
+                </span>
+
+            </div>
+          </div>
+
+          <div class="skewed-bg">
+            <div class="content">
+            </div>
+          </div>
+
+
+        <div class="obras">
+          <div class="text">
+            <span> PROJETOS </span>
+          </div>
+            <div id="gallery">
+              <div class="currieira">
+                <div class="tag">
+                  <h2> Obras de Remodelação </h2>
+                  <p> <strong> Brevemente Disponível </strong> </p>
+
+                </div>
+                <section class="gallery">
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">
+
+                  </div>
+                  </button>
+
+                    <div id="myDropdown" class="dropdown-content">
+                    <div class="gal img">
+                      <img src="./resources/images/currieira1.jpg">
+                      <img src="./resources/images/currieira2.jpg">
+                      <img src="./resources/images/currieira4.jpg">
+                    </div>
+                    </div>
+                  </div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+  if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+  }
+}
+}
+}
+</script>
+
+              </div>
+            </div>
+         </div>
+        </div>
+      </section>
+
+        <div class="division">
+          <div class="skewed-bg">
+            <div class="content">
+            </div>
+          </div>
+        </div>
+
+<!-- Carpintaria -->
+
+    <section id="carpint">
+      <div class="carpint-gallery">
+        <div class="banner">
+          <div class="site-wrapper">
+
+              <span class="frase">
+                <h1> CARPINTARIA </h1>
+                <span> Versátil e Segura,</span> </br>
+                <span> sempre com um design arrojado </span>
+              </span>
+
+          </div>
+        </div>
+
+        <div class="division">
+          <div class="skewed-bg">
+            <div class="content">
+            </div>
+          </div>
+        </div>
+
+        <div class="obras">
+            <div class="text">
+              <span> PROJETOS </span>
+            </div>
+            <div class="site-wrapper">
+            <div class="gal">
+              <div class="tag">
+              <h2> Currieira </h2>
+              <p> Localização: Algarve </p>
+            </div>
+              <div class="obra">
+               <div class="cur_main"></div>
+                 <div class="cur_small">
+                   <img src="./resources/images/currieira1.jpg">
+                   <img src="./resources/images/currieira2.jpg">
+                   <img src="./resources/images/currieira4.jpg">
+                   <img src="./resources/images/currieira5.jpg">
+                 </div>
+            </div>
+
+            <div class="tag">
+            <h2> Nome </h2>
+            <p> Descrição </p>
+          </div>
+          <div class="obra">
+            <div class="banheira">
+            </div>
+            <div class="obra-text">
+              <p> Um pequeno projeto para adicionar um toque especial à sua casa </p>
+        </div>
+      </div>
+
+
+
+
+
+      </div>
+    </section>
+
     <!-- Equipa -->
     <section id="equipa">
       <div class="site-wrapper">
@@ -171,132 +324,6 @@ $(document).ready(function(){
     </section>
 
 
-    <!-- Remodelações -->
-    <div class="division">
-      <div class="skewed-bg">
-        <div class="content">
-        </div>
-      </div>
-    </div>
-    <section id="remodel">
-        <div class="remodel-gallery">
-          <div class="banner">
-            <div class="site-wrapper">
-              <div class="flex-column">
-                <span class="frase"> <h1> REMODELAÇÕES </h1> <span>NÃO PRECISA DE ESPERAR MAIS TEMPO</span> </br>
-                <span>PARA SE SENTIR EM CASA</span>
-              </div>
-            </div>
-          </div>
-          <div class="skewed-bg">
-            <div class="content">
-            </div>
-          </div>
-
-
-        <div class="obras">
-
-            <div class="flex-column">
-              <div class="text">
-                <span> PROJETOS </span>
-              </div>
-              <div id="gallery">
-                <div class="currieira">
-                  <h1> <em> Brevemente Disponível</em> </h1>
-
-                </div>
-
-
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-        <div class="division">
-          <div class="skewed-bg">
-            <div class="content">
-            </div>
-          </div>
-        </div>
-    <section id="carpint">
-      <div class="carpint-gallery">
-        <div class="banner">
-          <div class="site-wrapper">
-            <div class="flex-column">
-              <span class="frase"> <h1> CARPINTARIA </h1> <span> Versátil e Segura, sempre com um design arrojado </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skewed-bg">
-          <div class="content">
-          </div>
-        </div>
-            <div class="obras">
-
-                <div class="flex-column">
-                  <div class="text">
-                    <span> PROJETOS </span>
-                  </div>
-                  <div id="gallery">
-                    <div class="currieira">
-                      <h1> <em> Brevemente Disponível</em> </h1>
-
-
-                      <section class="gallery">
-
-                                          <div class="dropdown">
-                                    <button onclick="myFunction()" class="dropbtn"></div></button>
-                                    <div id="myDropdown" class="dropdown-content">
-                                      <div class="gal img1">
-                                       <img src="./resources/images/currieira1.jpg">
-                                       <img src="./resources/images/currieira2.jpg">
-                                       <img src="./resources/images/currieira4.jpg">
-                                      </div>
-
-                                    </div>
-                                  </div>
-
-
-
-                                  <script>
-                                  /* When the user clicks on the button,
-                                  toggle between hiding and showing the dropdown content */
-                                  function myFunction() {
-                                      document.getElementById("myDropdown").classList.toggle("show");
-                                  }
-
-                                  // Close the dropdown if the user clicks outside of it
-                                  window.onclick = function(event) {
-                                    if (!event.target.matches('.dropbtn')) {
-
-                                      var dropdowns = document.getElementsByClassName("dropdown-content");
-                                      var i;
-                                      for (i = 0; i < dropdowns.length; i++) {
-                                        var openDropdown = dropdowns[i];
-                                        if (openDropdown.classList.contains('show')) {
-                                          openDropdown.classList.remove('show');
-                                        }
-                                      }
-                                    }
-                                  }
-                                  </script>
-
-
-
-                  </section>
-
-
-                    </div>
-          </div>
-
-
-      </div>
-    </div>
-  </section>
 
     <!-- Contact FORM Section -->
 
@@ -357,11 +384,11 @@ $(document).ready(function(){
           <a href="#begin"> <img class="logo" src="./resources/images/LOGO_yellow.svg" alt="logo"> </a>
           <ul>
             <li> <a href="#sobre" class="link"> SOBRE NÓS </a> </li>
+            <li> <a href="#remodel" class="link"> REMODELAÇÃO </a> </li>
+            <li> <a href="#carpint" class="link"> CARPINTARIA </a> </li>
             <li> <a href="#equipa" class="link"> EQUIPA </a> </li>
-            <li> <a href="#remodel" class="link sliding"> REMODELAÇÃO </a> </li>
-            <li> <a href="#carpint" class="link sliding"> CARPINTARIA </a> </li>
             <li> <a href="#contact" class="link"> CONTACTO </a> </li>
-            <li> <a href="#parcerias" class="link"> PARCERIAS </a> </li>
+
           </ul>
         </div>
         </footer>

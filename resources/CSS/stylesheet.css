@@ -58,6 +58,7 @@ html {
 }
 
 .site-wrapper {
+  height: 100%;
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -66,12 +67,12 @@ html {
 }
 
 .flex-column {
-  height: 600px;
+  height: 100%;
   width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10rem;
+
 }
 
 .content {
@@ -133,9 +134,10 @@ h1 {
 }
 
 h2 {
-  color: rgb(248,238,94);
+  color: #fbed2b;
   font-size: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
   width: 80%;
   font-weight: 700;
 }
@@ -151,11 +153,22 @@ p {
   line-height: 1.75;
 }
 
+.explanation p {
+text-align: left;
+margin: 3rem 0;
+color: black;
+}
+
 .text {
   /* display: flex; */
   flex-direction: column;
   width: 100%;
   color: black;
+}
+
+.obras .text {
+  width: 90%;
+  margin: 3rem auto 6rem auto;
 }
 
 
@@ -217,9 +230,10 @@ span {
 }
 .category a .text {
   font-family: "Open Sans", "Raleway", sans-serif;
-  transform: translate3d(0, 0.7em, 0);
+  /*transform: translate3d(0, 0.7em, 0);
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s; */
   display: block;
-  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+
   color: white;
   font-size: 1.75rem;
   margin: 1rem;
@@ -244,34 +258,34 @@ span {
   background: #fbed2b;
 }
 .line.-right, .line.-left {
-  width: 3px;
-  bottom: -3px;
-  top: -3px;
+  width: 2px;
+  bottom: -2px;
+  top: -2px;
   transform: scale3d(1, 0, 1);
 }
 .line.-top, .line.-bottom {
-  height: 3px;
-  left: -3px;
-  right: -3px;
+  height: 2px;
+  left: -2px;
+  right: -2px;
   transform: scale3d(0, 1, 1);
 }
 .line.-right {
-  right: -3px;
+  right: -2px;
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
   transform-origin: top;
 }
 .line.-top {
-  top: -3px;
+  top: -2px;
   transition: transform 0.08s linear 0.43s;
   transform-origin: left;
 }
 .line.-left {
-  left: -3px;
+  left: -2px;
   transition: transform 0.08s linear 0.51s;
   transform-origin: bottom;
 }
 .line.-bottom {
-  bottom: -3px;
+  bottom: -2px;
   transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
   transform-origin: right;
 }
@@ -284,8 +298,8 @@ span {
 .category a:hover:after,
 .category a:active:after {
   transform: scale3d(0, 1, 1);
-  right: -3px;
-  left: -3px;
+  right: -2px;
+  left: -2px;
   transform-origin: right;
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
 }
@@ -328,7 +342,7 @@ span {
 .category h3 {
   font-family: "Open Sans", "Raleway", sans-serif;
   font-size: 5rem;
-  margin: 4rem auto;
+  margin: 6rem auto;
   font-weight: 800;
   color: white;
 }
@@ -429,7 +443,7 @@ span {
     margin: 2rem 4rem 1rem 4rem;
   }
 
-  #remodel, #carpint {
+  #remodel {
     margin: 0 auto;
   }
 
@@ -437,14 +451,23 @@ span {
     margin: 13rem auto;
   }
 
-  #carpint p {
+  #carpint-gallery {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5rem auto;
+  }
+
+  #carpint p, .remodel p {
     color: black;
-    text-align: right;
+
   }
 
   #remodel .skewed-bg {
     margin-top: -6rem;
   }
+
 
   .banner {
     background-image: url("../images/cozinha-amarela-moderna.jpg");
@@ -464,13 +487,14 @@ span {
     background-size: cover;
     height: 50rem;
     width: 100%;
-    margin: -4rem 0;
+    margin-top: -17rem;
     z-index: 9;
   }
 
   .frase {
     background-color: rgba(0, 0, 0, 0.3);
-    width: 70%;
+    width: 100%;
+    height: 100%;
   }
 
   .frase h1, .frase span {
@@ -481,7 +505,7 @@ span {
   .banner span {
     font-family: "Open Sans", "Raleway", sans-serif;
     font-weight: 800;
-    font-style: italic;
+
     color: white;
     font-size: 4rem;
     text-align: left;
@@ -493,15 +517,16 @@ span {
   .obras span  {
     font-family: "Open Sans", "Raleway", sans-serif;
     font-weight: 800;
-    font-style: italic;
+
     font-size: 4rem;
     text-align: left;
     color: #fbed2b;
 
   }
 
-  .obras span {
-    margin-left: 5%;
+  .obras  {
+
+    margin: 10rem auto;
   }
 
 
@@ -839,7 +864,9 @@ fieldset {
 
 
 #gallery {
-  width: 80%;
+  width: 90%;
+  margin: 5rem auto;
+
 }
 
 .currieira-main-img {
@@ -886,7 +913,9 @@ button {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
+    margin-bottom: 150px;
+    width: 100%;
     min-width: 160px;
     z-index: 1;
 }
@@ -911,7 +940,7 @@ button {
 }
 
 #myDropdown.dropdown-content.show {
-  width: 80%;
+  width: 100%;
   height: 500px;
 }
 
@@ -919,10 +948,8 @@ button {
   width: 100%;
 }
 
-.gal {
-  width: 20%;
-  }
-.gal.img1 {
+
+.gal.img {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -931,7 +958,65 @@ button {
   background-color: #f8f8f8;
     }
 
-    .gal.img1 img {
-      width:30%;
-      margin: 2rem;
-    }
+.gal.img img {
+  width:30%;
+  margin: 2rem;
+  }
+
+.gal img {
+  width: 50%;
+  margin-bottom: 2rem;
+
+}
+
+.obra {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.obra-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+
+.cur_main {
+  width: 50%;
+  background-image: url("../images/currieira_exterior.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.cur_small {
+  width: 50%;
+  height: 400px;
+}
+
+.cur_small img {
+  width: 40%;
+  margin: 0 1% 1% 2.5%;
+}
+
+.banheira {
+  width: 50%;
+  background-image: url("../images/banheira.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 75%;
+  height: 400px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.tag {
+  border-top: 1px solid #fbed2b;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
