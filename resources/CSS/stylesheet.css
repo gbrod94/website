@@ -59,7 +59,7 @@ html {
 
 .site-wrapper {
   height: 100%;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -76,6 +76,7 @@ html {
 }
 
 .content {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -137,7 +138,7 @@ h2 {
   color: #fbed2b;
   font-size: 3rem;
   margin-bottom: 2rem;
-  margin-top: 5rem;
+  margin-top: 10rem;
   width: 80%;
   font-weight: 700;
   line-height: 1.5;
@@ -148,6 +149,33 @@ h2 {
 h3 {
   color: black;
   font-size: 2.5rem;
+}
+
+.text h3 {
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+.in-construction h2 {
+  margin: 2rem auto;
+}
+
+.topics {
+  display: flex;
+  align-items: center;
+
+}
+
+.topics ul {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 8rem 1.5rem 0;
+}
+
+.topics ul li {
+  font-size: 1.5rem;
+  margin: 1.5rem 3rem 1.5rem 0;
+  color: white;
 }
 
 h4 {
@@ -174,10 +202,14 @@ color: black;
 }
 
 .obras .text {
-  width: 90%;
+  width: 80%;
   margin: 3rem auto 6rem auto;
+
 }
 
+.obras h4 {
+  color: white;
+}
 
 span {
   font-family: 'Lato', sans-serif;
@@ -410,6 +442,9 @@ span {
   left: 10%;
 }
 
+#sobre .text {
+  width: 60%;
+}
 #sobre {
   text-align: left;
   }
@@ -418,8 +453,10 @@ span {
     color: white;
   }
 
+  #sobre h2 { margin-top: 0;}
+
   #equipa {
-    padding-top: 10rem;
+
     display: flex;
     justify-content: center;
     margin-bottom: 10rem;
@@ -429,6 +466,8 @@ span {
     color: black;
     text-align: right;
   }
+
+
 
   .fotografias {
   width: 80%;
@@ -476,6 +515,10 @@ span {
     margin-top: -6rem;
   }
 
+  #remodel .text, #carpint .text {
+    width: 80%;
+    margin: 0 auto;
+  }
 
   .banner {
     background-image: url("../images/cozinha-amarela-moderna.jpg");
@@ -532,9 +575,15 @@ span {
   }
 
   .obras  {
-
-    margin: 10rem auto;
+    width: 100%;
+    margin: 0 auto;
   }
+
+  .obras h3 {
+    color: white;
+  }
+
+
 
 
 
@@ -555,7 +604,7 @@ span {
 
   #remodel .skewed-bg, .division .skewed-bg {
     padding: 5rem 0;
-    background-color: white;
+
   }
 
   #contact {
@@ -564,7 +613,7 @@ span {
     margin: 0 auto;
     border-top: 1px solid #fbed2b;
     background-color: black;
-    
+
   }
 
   #contact h2 {
@@ -794,11 +843,14 @@ fieldset {
 
 
   /* EFFECTS */
+  .skewed-bg.black {
+    background-color: black;
+  }
 
   .skewed-bg {
     display: flex;
     align-items: center;
-    background: rgb(0,0,0);
+    background: white;
     padding: 15rem 0;
     -webkit-transform: skew(0deg, -2deg);
     transform: skew(0deg, -2deg);
@@ -815,9 +867,9 @@ fieldset {
     font-weight: normal;
   }
   .skewed-bg .content .text {
-    width: 60%;
+    width: 80%;
     /* margin: 25px auto; */
-    color: #ccfff2;
+
   }
 
   /* hover link effect */
@@ -875,7 +927,7 @@ fieldset {
 
 
 #gallery {
-  width: 90%;
+  width: 80%;
   margin: 5rem auto;
 
 }
@@ -988,7 +1040,20 @@ button {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.obra.row img {
+  width: 45%;
+  margin-right: 2rem;
+}
+
+.obra.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
 }
 
 .obra-text {
@@ -1012,11 +1077,11 @@ button {
 
 .small_section {
   width: 50%;
-  height: 400px;
+  margin-top: 2rem;
 }
 
 .small_section img {
-  width: 40%;
+  width: 45%;
   margin: 0 1% 1% 2.5%;
 }
 
