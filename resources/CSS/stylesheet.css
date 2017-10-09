@@ -140,7 +140,10 @@ h2 {
   margin-top: 5rem;
   width: 80%;
   font-weight: 700;
+  line-height: 1.5;
+
 }
+
 
 h3 {
   color: black;
@@ -560,6 +563,8 @@ span {
     align-items: center;
     margin: 0 auto;
     border-top: 1px solid #fbed2b;
+    background-color: black;
+    
   }
 
   #contact h2 {
@@ -665,7 +670,7 @@ span {
 }
 
 #contact-form h4 {
-  
+
   display: block;
   font-size: 13px;
   font-weight: 400;
@@ -1028,7 +1033,6 @@ button {
 
 .tag {
   border-top: 1px solid #fbed2b;
-  margin-top: 6rem;
   margin-bottom: 3rem;
 }
 
